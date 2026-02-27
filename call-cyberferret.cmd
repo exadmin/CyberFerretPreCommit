@@ -7,8 +7,8 @@ if "%CYBER_FERRET_PATH%"=="" (
   exit /b 1
 )
 
-if not exist "%CYBER_FERRET_PATH%/cyberferret.jar" (
-  echo File '%CYBER_FERRET_PATH%/cyberferret.jar' does not exist. 1>&2
+if not exist "%CYBER_FERRET_PATH%/target/cyberferret.jar" (
+  echo File '%CYBER_FERRET_PATH%/target/cyberferret.jar' does not exist. 1>&2
   echo "Also, compile & build project before use, probably run 'mvn clean package assembly:single' but better see README.md" 1>&2
   exit /b 1
 )
