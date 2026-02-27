@@ -13,5 +13,5 @@ if not exist "%CYBER_FERRET_PATH%/cyberferret.jar" (
   exit /b 1
 )
 
-call javaw -cp %CYBER_FERRET_PATH%/cyberferret.jar com.github.exadmin.cyberferret.CyberFerretCLI %CD%
+call javaw -cp %CYBER_FERRET_PATH%/target/cyberferret.jar com.github.exadmin.cyberferret.CyberFerretCLI %CD%
 
